@@ -5,12 +5,12 @@ const inquirer = require('inquirer');
 // const utils = require('utils');
 //allows to read files
 const fs = require('fs');
+//file to generate readme
+const generateFile = require('./generateFile');
 
 
 // TODO: Create an array of questions for user input
-// const questions = 
-inquirer
-.prompt([
+const questions = [
   {
     type: 'input',
     message: 'What is your project title?',
@@ -46,13 +46,23 @@ inquirer
     message: 'Include any tests',
     name: 'tests',
   },
+  {
+    type: 'list',
+    message: 'Choose a license for your application',
+    name: 'license',
+    choices: 
+    [
+      'The Unlicense',
+      'Boost Software License 1.0',
+      'Apache License 2.0',
+      'Mozilla Public License 2.0',
+      'GNU AGPLv3',
+      'MIT',
+      'None'
+    ]
+  }
 
-//   {
-//     type: '',
-//     message: 'Include any tests',
-//     name: 'tests',
-//   },
-]);
+];
 
 
 // TODO: Create a function to write README file
