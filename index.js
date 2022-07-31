@@ -67,10 +67,18 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+  var readMeInfo = generateFile(response);
+  //write to README.md with anything I pass into readMeInfo
+  fs.writeFile('./README.md', readMeInfo, (err) =>
+  err ? console.error(err) : console.log('Success!')
+  );
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  //still confused about this section kinda and how to relate everything 
+  //maybe need to add inquirer prompt section + then response to here??
+}
 
 // Function call to initialize app
 init();
