@@ -5,8 +5,9 @@ const inquirer = require('inquirer');
 // const utils = require('utils');
 //allows to read files
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 //file to generate readme
-const generateFile = require('./generateFile');
+
 
 
 // TODO: Create an array of questions for user input
@@ -67,15 +68,24 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  var readMeInfo = generateFile(response);
   //write to README.md with anything I pass into readMeInfo
-  fs.writeFile('./README.md', readMeInfo, (err) =>
+  let readMePage = generateMarkdown(data);
+  fs.writeFile(fileName, readMePage, (err) =>
   err ? console.error(err) : console.log('Success!')
   );
+}
+function generateFile(questions){
+  inquirer
+  .prompt(questions)
+  // .then((response) => console.log(response))
+  .then((response) => writeToFile('ReadMe', response));
+// return readmeData;
 }
 
 // TODO: Create a function to initialize app
 function init() {
+  //put other functions in here
+  generateFile(questions);
   //still confused about this section kinda and how to relate everything 
   //maybe need to add inquirer prompt section + then response to here??
 }
