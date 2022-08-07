@@ -55,7 +55,7 @@ const questions = [
     [
       'The Unlicense',
       'Boost Software License 1.0',
-      'Apache License 2.0',
+      'Apache 2.0 License',
       'Mozilla Public License 2.0',
       'GNU AGPLv3',
       'MIT',
