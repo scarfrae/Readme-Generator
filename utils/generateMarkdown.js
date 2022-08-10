@@ -124,7 +124,28 @@ limitations under the License.`}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `
+  # ${data.title}
+  https://github.com/${data.username}/${data.title}
+  # Description
+  ${data.description}
+  *Installation
+  *Usage
+  *License
+  *Contribution
+  *Tests
+  *Questions
+  *Installation
+  # Installation
+  ...
+  #Usage 
+  To use this app, ${data.usage}
+  #License
+  ${data.license}
+  #Contributors
+  Contributors to this project are: ${data.contributions}
+  #Tests
+  The following tests are needed to run this project: ${data.tests}
 
 `;
 }
