@@ -89,10 +89,10 @@ function generateFile(questions){
 
 // TODO: Create a function to initialize app
 function init() {
-  //put other functions in here
+
   generateFile(questions);
-  //still confused about this section kinda and how to relate everything 
-  //maybe need to add inquirer prompt section + then response to here??
+
+  
 }
 
 // Function call to initialize app

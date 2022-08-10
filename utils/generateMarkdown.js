@@ -124,6 +124,10 @@ limitations under the License.`}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  const badge = renderLicenseBadge(data.license);
+  const link = renderLicenseLink(data.license);
+  const licenseSection = renderLicenseSection(data.license)
+
   return `
   # ${data.title}
   https://github.com/${data.username}/${data.title}
@@ -138,14 +142,17 @@ function generateMarkdown(data) {
   *Installation
   # Installation
   ...
-  #Usage 
+  # Usage 
   To use this app, ${data.usage}
-  #License
+  # License
   ${data.license}
   #Contributors
   Contributors to this project are: ${data.contributions}
   #Tests
   The following tests are needed to run this project: ${data.tests}
+  ${badge}
+  ${link}
+  ${licenseSection}
 
 `;
 }
