@@ -29,13 +29,8 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Table of Contents',
-    name: 'contents',
-  },
-  {
-    type: 'input',
     message: 'What are the instilation instructions for your project?',
-    name: 'description',
+    name: 'installation',
   },
   {
     type: 'input',
@@ -83,7 +78,7 @@ function generateFile(questions){
   inquirer
   .prompt(questions)
   // .then((response) => console.log(response))
-  .then((response) => writeToFile('ReadMe', response));
+  .then((response) => writeToFile('./dist/README.md', response));
 // return readmeData;
 }
 

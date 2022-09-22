@@ -106,7 +106,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   else if(license === "Apache 2.0 License"){
     return `
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2022
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -133,26 +133,26 @@ function generateMarkdown(data) {
   https://github.com/${data.username}/${data.title}
   # Description
   ${data.description}
-  *Installation
-  *Usage
-  *License
-  *Contribution
-  *Tests
-  *Questions
-  *Installation
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contribution](#contribution)
+  * [Tests](#tests)
+  * [Questions](questions)
+
   # Installation
-  ...
+  ${data.installation}
   # Usage 
   To use this app, ${data.usage}
   # License
   ${data.license}
-  #Contributors
-  Contributors to this project are: ${data.contributions}
-  #Tests
-  The following tests are needed to run this project: ${data.tests}
   ${badge}
   ${link}
   ${licenseSection}
+  # Contributors
+  Contributors to this project are: ${data.contributions}
+  # Tests
+  The following tests are needed to run this project: ${data.tests}
 
 `;
 }
