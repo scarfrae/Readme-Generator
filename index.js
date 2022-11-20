@@ -56,8 +56,8 @@ const questions = [
       'The Unlicense',
       'Boost Software License 1.0',
       'Apache 2.0 License',
-      'Mozilla Public License 2.0',
-      'GNU AGPLv3',
+      // 'Mozilla Public License 2.0',
+      // 'GNU AGPLv3',
       'MIT',
       'None'
     ]
@@ -70,7 +70,6 @@ const questions = [
 
 ];
 
-//have user input their email
 
 
 // TODO: Create a function to write README file
@@ -86,15 +85,11 @@ function generateFile(questions){
   .prompt(questions)
   // .then((response) => console.log(response))
   .then((response) => writeToFile('./dist/README.md', response));
-// return readmeData;
 }
 
 // TODO: Create a function to initialize app
 function init() {
-
   generateFile(questions);
-
-  
 }
 
 // Function call to initialize app

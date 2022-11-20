@@ -129,10 +129,10 @@ function generateMarkdown(data) {
   const licenseSection = renderLicenseSection(data.license)
 
   return `
-  # ${data.title}
-  # Description
+  # ${data.title} ${badge}
+  # Description 📚
   ${data.description}
-  # Table of Contents
+  # Table of Contents 📄
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -140,20 +140,20 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   * [Questions](#questions)
 
-  # Installation
+  # Installation ⚙️
   ${data.installation}
-  # Usage 
+  # Usage 💻
   To use this app, ${data.usage}
-  # License
+  # License 💳
   ${data.license}
   ${badge}
   ${link}
   ${licenseSection}
   # Contributors
   Contributors to this project are: ${data.contributions}
-  # Tests
+  # Testing 📝
   The following tests are needed to run this project: ${data.tests}
-  # Questions
+  # Questions ☎
   Visit my github: https://github.com/${data.username}/
   Mail to: ${data.questions}
 `;
