@@ -1,7 +1,7 @@
 
-  # MyLife
+  # SuccessForAll
   # Description
-  MyLife is a application i'm working on right now.
+  SuccessForAll is a app that tracks your spending through monthly check ins to see if you met your goals
   # Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -11,7 +11,7 @@
   * [Questions](questions)
 
   # Installation
-  Install MyLife
+  Install Nodejs
   # Usage 
   To use this app, Open up the heroku app
   # License
@@ -24,7 +24,5 @@
   # Tests
   The following tests are needed to run this project: N/A
   # Questions
-  Visit my github: https://github.com/Sterling/
-  Mail to: Sterlinglc123@gmail.com
-  
-
+  Visit my github: https://github.com/Scarfrae/
+  Mail to: sterlinglc123@gmail.com
