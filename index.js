@@ -61,9 +61,16 @@ const questions = [
       'MIT',
       'None'
     ]
+  },
+  {
+    type: 'input',
+    message: 'Input your email',
+    name: 'questions',
   }
 
 ];
+
+//have user input their email
 
 
 // TODO: Create a function to write README file

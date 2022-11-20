@@ -130,9 +130,9 @@ function generateMarkdown(data) {
 
   return `
   # ${data.title}
-  https://github.com/${data.username}/${data.title}
   # Description
   ${data.description}
+  # Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -153,8 +153,11 @@ function generateMarkdown(data) {
   Contributors to this project are: ${data.contributions}
   # Tests
   The following tests are needed to run this project: ${data.tests}
-
+  # Questions
+  Visit my github: https://github.com/${data.username}/
+  Mail to: ${data.questions}
 `;
 }
+
 
 module.exports = generateMarkdown;

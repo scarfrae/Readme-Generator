@@ -1,8 +1,8 @@
 
-  # efs
-  https://github.com/fe/efs
+  # MyLife
   # Description
-  efs
+  MyLife is a application i'm working on right now.
+  # Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
@@ -11,16 +11,20 @@
   * [Questions](questions)
 
   # Installation
-  fes
+  Install MyLife
   # Usage 
-  To use this app, dfeshfs
+  To use this app, Open up the heroku app
   # License
-  None
+  GNU AGPLv3
   
   
   undefined
   # Contributors
-  Contributors to this project are: fsefh
+  Contributors to this project are: N/A
   # Tests
-  The following tests are needed to run this project: efsh
+  The following tests are needed to run this project: N/A
+  # Questions
+  Visit my github: https://github.com/Sterling/
+  Mail to: Sterlinglc123@gmail.com
+  
 
