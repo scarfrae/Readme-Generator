@@ -1,8 +1,8 @@
 
-  # efsehfs [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  # MyVitamins [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description 📚
-  #### shefhse
+  #### MyVitamins is a application used to buy vitamins online via a middle man distributor. It includes price comparison and many more money saving options.
   ---
   ## Table of Contents 📄
   * [Installation](#installation)
@@ -13,10 +13,10 @@
   * [Questions](#questions)
   ---
   ## Installation
-  #### sehfsef
-
+  #### Install vscode, inquirer@8.2.4
+  ---
   ## Usage
-  #### To use efsehfs, shefhs
+  #### To use MyVitamins, Clone down the github repo from the command line type: node index.js
   ---
   ## License 
   #### MIT
@@ -45,12 +45,12 @@
     SOFTWARE.
   ---
   ## Contributors
-  #### Contributors to efsehfs are: sehfeshf
+  #### Contributors to MyVitamins are: N/A
   ---
   ## Testing 
-  #### 📝 The following tests are needed to run efsehfs: shefhse
+  #### 📝 The following tests are needed to run MyVitamins: N/A
   ---
   ## Questions  
-  * Visit my github: https://github.com/efsefhsefh/
-  * Email me at: sefhsehf@gmail.com
-  * Follow me on linkedin: sefhshfs
+  * Visit my github: https://github.com/scarfrae/
+  * Email me at: sterlinglc123@gmail.com
+  * Follow me on linkedin: https://www.linkedin.com/in/sterling-carfrae-a2a8151a5/

@@ -1,7 +1,6 @@
 # *** Readme-Generator ***
 [GitHub Repository](https://github.com/scarfrae/Readme-Generator)
 
-<!-- deployed application -->
 ## **Description** 📚
 
 *Readme-Generator * is a application that generates a professional dynamic Readme file based on a users inputs. 
@@ -21,13 +20,13 @@
 
 ## **Installation** ⚙️
 
-Visit my [repository](https://github.com/scarfrae/Readme-Generator) to reference: any materials and my process in developing the web page. Watch my walkthrough video to reference how the application is used. Before starting the application install inquirer in your integrated terminal using: npm i inquirer@8.2.4.
+Visit my [repository](https://github.com/scarfrae/Readme-Generator) see my process of creating my application. Watch my walkthrough video: https://watch.screencastify.com/v/ou9vLsGShUiSDay2vpcs to see how the application is used. Before starting the application install inquirer in your integrated terminal using: npm i inquirer@8.2.4.
 <hr>
 
 ### **Usage** 💻
-* Users can invoke node index.js into their command line to start the application
-* Once they answer the questions provided they will recieve a success message in the terminal
-* They can then view their ReadMe file using the preview mode.
+* To start the application invoke node index.js into their command-line
+* Answer all questions as they are intended to generate a readme file in the dist folder of the application
+* To view their ReadMe file use the preview mode 
 
 <hr>
 
