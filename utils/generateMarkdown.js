@@ -130,7 +130,7 @@ function generateMarkdown(data) {
 
   return `
   # ${data.title} ${badge}
-  # Description 📚
+  # Description 
   ${data.description}
   # Table of Contents 📄
   * [Installation](#installation)
