@@ -1,12 +1,11 @@
 // TODO: Include packages needed for this application
-//allows to read inquirer package
+//read inquirer package
 const inquirer = require('inquirer');
-//allows to read utils package
-// const utils = require('utils');
-//allows to read files
+//read files
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
 //file to generate readme
+const generateMarkdown = require('./utils/generateMarkdown');
+
 
 
 
@@ -14,59 +13,67 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
   {
     type: 'input',
-    message: 'What is your username?',
-    name: 'username',
+    message: 'Enter your full name:',
+    name: 'name',
   },
   {
     type: 'input',
-    message: 'What is your project title?',
+    message: 'Enter your project title:',
     name: 'title',
   },
   {
     type: 'input',
-    message: 'What is a detailed description of your project?',
+    message: 'Enter a detailed description of your project:',
     name: 'description',
   },
   {
     type: 'input',
-    message: 'What are the instilation instructions for your project?',
+    message: 'Enter the installation instructions for your project:',
     name: 'installation',
   },
   {
     type: 'input',
-    message: 'What is your project usage; i.e how do you use your project',
+    message: 'Enter your project usage; i.e how do you use your project:',
     name: 'usage',
   },
   {
     type: 'input',
-    message: 'Include any contribution to your project; else input N/A',
+    message: 'Include any contribution to your project; else input N/A:',
     name: 'contributions',
   },
   {
     type: 'input',
-    message: 'Include any tests',
+    message: 'Include any tests; else input N/A:',
     name: 'tests',
   },
   {
     type: 'list',
-    message: 'Choose a license for your application',
+    message: 'Choose a license for your application:',
     name: 'license',
     choices: 
     [
       'The Unlicense',
       'Boost Software License 1.0',
       'Apache 2.0 License',
-      // 'Mozilla Public License 2.0',
-      // 'GNU AGPLv3',
       'MIT',
       'None'
     ]
   },
   {
     type: 'input',
-    message: 'Input your email',
+    message: 'Input your email:',
     name: 'questions',
-  }
+  },
+  {
+    type: 'input',
+    message: 'Input your GitHub Username?:',
+    name: 'username',
+  },
+  {
+    type: 'input',
+    message: 'Enter your LinkedIn URL:',
+    name: 'linkedin',
+  },
 
 ];
 
@@ -74,16 +81,18 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  //write to README.md with anything I pass into readMeInfo
+  //write to README.md via pushing data into readMePage variable
   let readMePage = generateMarkdown(data);
   fs.writeFile(fileName, readMePage, (err) =>
-  err ? console.error(err) : console.log('Success!')
+  err ? console.error(err) : console.log('Readme generated successfully in dist folder!')
   );
 }
 function generateFile(questions){
+  //ask user inquirer questions 
   inquirer
   .prompt(questions)
   // .then((response) => console.log(response))
+  //input responses into readme
   .then((response) => writeToFile('./dist/README.md', response));
 }
 
