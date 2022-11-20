@@ -13,12 +13,12 @@ function renderLicenseBadge(license) {
   else if(license === "Apache 2.0 License"){
     return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
   }
-  else if(license === "Mozilla Public License 2.0"){
-    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
-  }
-  else if(license === "GNU AGPL v3"){
-    return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`
-  }
+  // else if(license === "Mozilla Public License 2.0"){
+  //   return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`
+  // }
+  // else if(license === "GNU AGPL v3"){
+  //   return `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`
+  // }
   else{
     return "";
   }
@@ -40,12 +40,12 @@ function renderLicenseLink(license) {
   else if(license === "Apache 2.0 License"){
     return `http://www.apache.org/licenses/LICENSE-2.0`
   }
-  else if(license === "Mozilla Public License 2.0"){
-    return ``
-  }
-  else if(license === "GNU AGPL v3"){
-    return ``
-  }
+  // else if(license === "Mozilla Public License 2.0"){
+  //   return ``
+  // }
+  // else if(license === "GNU AGPL v3"){
+  //   return ``
+  // }
   else{
     return "";
   }
