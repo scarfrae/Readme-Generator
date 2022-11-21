@@ -25,8 +25,11 @@ Visit my [repository](https://github.com/scarfrae/Readme-Generator) see my proce
 
 ### **Usage** 💻
 * To start the application invoke node index.js into their command-line
+![Screenshot of command-line questions](./public/assets/CommandLine.png)
 * Answer all questions as they are intended to generate a readme file in the dist folder of the application
+![Screenshot of where to find preview](./public/assets/PreviewStart.png)
 * To view their ReadMe file use the preview mode 
+![Screenshot of readme preview](./public/assets/Preview.png)
 
 <hr>
 
